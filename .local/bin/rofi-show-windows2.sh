@@ -65,6 +65,12 @@ find_desktop_file() {
 get_pwa_app_id() {
     local nid="$1"
 
+    local class_app_id=$(xprop -id "$nid" WM_CLASS  | awk -F'"' '{print $(NF-3)}')
+    if [[ -n "$class_app_id" ]] && [[ "${class_app_id:0:4}" == "crx_" ]]; then
+        echo "${class_app_id:4}" | sed 's/^_*//'
+        return
+    fi
+
     local pid=$(get_window_pid "$nid" 2>/dev/null || true)
     [[ -n "$pid" ]] || return 1;
 
