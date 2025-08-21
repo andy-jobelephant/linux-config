@@ -1,0 +1,57 @@
+configuration {
+    modi: "run,drun,window";
+    font: "Fira Code";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "Apps:";
+    display-run: "Run:";
+    display-window: "Windows:";
+    filebrowser-show-hidden: true;
+    show-hidden: true;
+    show-dotfiles: true;
+}
+
+* {
+    bg: #1e1e2e;
+    fg: #cdd6f4;
+    selbg: #89b4fa;
+    selfg: #1e1e2e;
+    urgentbg: #f38ba8;
+    urgentfg: #1e1e2e;
+}
+
+window {
+    transparency: "real";
+    border: 2px;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: @bg;
+}
+
+mainbox {
+    padding: 10px;
+}
+
+entry {
+    padding: 8px;
+    background-color: @bg;
+    text-color: @fg;
+    placeholder: "Type to search...";
+}
+
+listview {
+    columns: 1;
+    lines: 10;
+    fixed-height: true;
+    spacing: 5px;
+}
+
+element {
+    padding: 6px;
+    border-radius: 6px;
+}
+
+element selected {
+    background-color: @selbg;
+    text-color: @selfg;
+}

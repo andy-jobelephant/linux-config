@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Cursor
+Exec=/home/andy/Applications/Cursor-1.4.5-x86_64.AppImage
+Icon=cursor
+Type=Application
+Categories=Utility;
+X-XFCE-Source=file:///home/andy/.local/share/applications/Cursor.desktop

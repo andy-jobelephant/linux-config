@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Teams
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=cifhbcnohmdccbgoicgdjpfamggdegmo
+Icon=chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default
+StartupWMClass=crx_cifhbcnohmdccbgoicgdjpfamggdegmo
+X-XFCE-Source=file:///home/andy/.local/share/applications/chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop
+Comment=
+Path=
+StartupNotify=false

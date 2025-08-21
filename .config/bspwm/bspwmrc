@@ -1,0 +1,88 @@
+#! /bin/sh
+
+run_once() { pgrep -x "$1" >/dev/null || "$@" & }
+
+run_once sxhkd
+
+# --- kill other tray watchers that can conflict (Mint/Cinnamon)
+# pkill -x xapp-sn-watcher >/dev/null 2>&1 || true
+
+# --- auth + power + notifications
+pgrep -x polkit-gnome-authentication-agent-1 >/dev/null || /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+pgrep -xf "xfce4-power-manager" >/dev/null || xfce4-power-manager &
+run_once xfce4-notifyd
+
+# --- network / bluetooth trays
+run_once nm-tray          # or: run_once nm-applet
+run_once blueman-applet
+pgrep -x udiskie >/dev/null || udiskie --tray &
+
+run_once xfce4-panel
+run_once dunst
+pgrep -x picom >/dev/null || picom --daemon &
+run_once nm-applet
+
+/usr/local/bin/set-monitors.sh
+
+# see monitor names known to bspwm
+bspc query -M --names
+
+# give the internal panel 1-5, external 6-10 (adjust to taste)
+bspc monitor eDP-1  -d I IV IIV X
+bspc monitor HDMI-1 -d II V VIII
+bspc monitor DP-1  -d III IV IX
+
+# bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config top_padding 0
+# bspc config bottom_padding 36
+bspc config -m HDMI-1 bottom_padding 48
+bspc config -m DP-1 bottom_padding 0
+bspc config -m eDP-1 bottom_padding 0
+
+bspc config split_ratio          0.52
+bspc config initial_polarity   first_child
+bspc config automatic_scheme   spiral
+
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a Microsoft-edge monitor=eDP-1
+bspc rule -a Google-chrome monitor=DP-1
+bspc rule -a Slack monitor=DP-1
+
+bspc config pointer_modifier mod4
+bspc config pointer_action1 move
+bspc config pointer_action3 resize_corner
+
+# New windows should follow focus
+bspc config focus_follows_pointer true
+# bspc rule -a '*' monitor=focused desktop=focused
+
+# Force the first split on HDMI-1 to the right
+bspc subscribe desktop_add | while read _ monitor_id desktop_id rest; do
+    name=$(bspc query -M --names -m $monitor_id)
+    case $name in
+        HDMI-1) bspc node "$desktop_id:/" -p east ;;
+        DP-1)   bspc node "$desktop_id:/" -p west ;;
+    esac
+done &
+
+
+bspc rule -a Xfce4-panel state=floating sticky=on monitor=HDMI-1
+bspc rule -a Wrapper-2.0 border=off focus=on monitor=HDMI-1
+
+# devices
+# mouse
+xinput --set-prop "pointer:Razer Razer DeathAdder Elite" "libinput Accel Speed" -0.3
+# keyboard
+xset r rate 200 60

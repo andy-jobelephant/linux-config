@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Insomnia
+Exec=/opt/Insomnia/insomnia %U
+Terminal=false
+Type=Application
+Icon=insomnia
+StartupWMClass=Insomnia
+Comment=The Collaborative API Design Tool
+Categories=Development;
+Keywords=GraphQL;REST;gRPC;SOAP;openAPI;GitOps;
+MimeType=x-scheme-handler/insomnia;
+X-XFCE-Source=file:///usr/share/applications/insomnia.desktop

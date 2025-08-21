@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Front
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=jjmemmllnjholihdmnldbfdegkemadej
+Icon=chrome-jjmemmllnjholihdmnldbfdegkemadej-Default
+StartupWMClass=crx_jjmemmllnjholihdmnldbfdegkemadej
+X-XFCE-Source=file:///home/andy/.local/share/applications/chrome-jjmemmllnjholihdmnldbfdegkemadej-Default.desktop

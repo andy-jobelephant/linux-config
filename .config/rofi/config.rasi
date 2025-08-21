@@ -1,0 +1,10 @@
+configuration {
+    modi: "drun,run,window";
+    font: "Fira Code 12";
+    show-icons: true;
+    icon-theme: "Papirus";
+    filebrowser-show-hidden: true;
+    show-hidden: true;
+    show-dotfiles: true;
+}
+@theme "~/.config/rofi/launchers/type-1/style-5.rasi"

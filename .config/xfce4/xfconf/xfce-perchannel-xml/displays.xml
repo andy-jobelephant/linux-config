@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="displays" version="1.0">
+  <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="Default" type="empty">
+    <property name="eDP-1" type="string" value="Laptop">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="7ce57fd1682100aee85355b3f91c3b42e0a9d396"/>
+      <property name="Resolution" type="string" value="2048x1152"/>
+      <property name="RefreshRate" type="double" value="59.999694245704156"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="HDMI-1" type="string" value="Sceptre Tech Inc 29&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="c76e7820a1c24663d4607eb3afed07685c13ac6b"/>
+      <property name="Resolution" type="string" value="2560x1080"/>
+      <property name="RefreshRate" type="double" value="59.784462402266882"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="2048"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP-1" type="string" value="LG Electronics 34&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="007f01b0f5a3c0a372a3f752d5cf2d1282ec519b"/>
+      <property name="Resolution" type="string" value="2560x1080"/>
+      <property name="RefreshRate" type="double" value="59.999534436202239"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="4608"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+  </property>
+  <property name="Fallback" type="empty">
+    <property name="eDP-1" type="string" value="Laptop">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="7ce57fd1682100aee85355b3f91c3b42e0a9d396"/>
+      <property name="Resolution" type="string" value="2048x1152"/>
+      <property name="RefreshRate" type="double" value="59.999694245704156"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="HDMI-1" type="string" value="Sceptre Tech Inc 29&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="c76e7820a1c24663d4607eb3afed07685c13ac6b"/>
+      <property name="Resolution" type="string" value="2560x1080"/>
+      <property name="RefreshRate" type="double" value="59.784462402266882"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="2048"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP-1" type="string" value="LG Electronics 34&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="007f01b0f5a3c0a372a3f752d5cf2d1282ec519b"/>
+      <property name="Resolution" type="string" value="2560x1080"/>
+      <property name="RefreshRate" type="double" value="59.999534436202239"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="4608"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+  </property>
+  <property name="Notify" type="int" value="1"/>
+  <property name="d266832d74c8f1780720149f358ecfb04b9f35a5" type="string" value="display_profile">
+    <property name="eDP-1" type="string" value="Laptop">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="7ce57fd1682100aee85355b3f91c3b42e0a9d396"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="59.999653811534998"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="HDMI-1" type="string" value="Sceptre Tech Inc 29&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="c76e7820a1c24663d4607eb3afed07685c13ac6b"/>
+      <property name="Resolution" type="string" value="2560x1080"/>
+      <property name="RefreshRate" type="double" value="59.784462402266882"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1920"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP-1" type="string" value="LG Electronics 34&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="007f01b0f5a3c0a372a3f752d5cf2d1282ec519b"/>
+      <property name="Resolution" type="string" value="2560x1080"/>
+      <property name="RefreshRate" type="double" value="59.999534436202239"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="empty">
+        <property name="X" type="double" value="1"/>
+        <property name="Y" type="double" value="1"/>
+      </property>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="4480"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+  </property>
+</channel>
