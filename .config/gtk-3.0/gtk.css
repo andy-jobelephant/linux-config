@@ -1,6 +1,11 @@
-* {
+/* * { */
     /* text selection background */
-    selection-background-color: #4A90E2;
+    /* selection-background-color: #4A90E2; */
     /* text selection foreground */
-    selection-color: #ffffff;
+    /* selection-color: #ffffff; */
+/* } */
+textview text selection,
+entry selection {
+    background-color: #dadada;   /* selection background */
+    color: #212121;              /* selection text */
 }

@@ -6,8 +6,8 @@
     <property name="eDP-1" type="string" value="Laptop">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="7ce57fd1682100aee85355b3f91c3b42e0a9d396"/>
-      <property name="Resolution" type="string" value="2048x1152"/>
-      <property name="RefreshRate" type="double" value="59.999694245704156"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="59.999653811534998"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
@@ -33,7 +33,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="2048"/>
+        <property name="X" type="int" value="1920"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -50,7 +50,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="4608"/>
+        <property name="X" type="int" value="4480"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -59,8 +59,8 @@
     <property name="eDP-1" type="string" value="Laptop">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="7ce57fd1682100aee85355b3f91c3b42e0a9d396"/>
-      <property name="Resolution" type="string" value="2048x1152"/>
-      <property name="RefreshRate" type="double" value="59.999694245704156"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="59.999653811534998"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
@@ -86,7 +86,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="2048"/>
+        <property name="X" type="int" value="1920"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -103,7 +103,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="4608"/>
+        <property name="X" type="int" value="4480"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
