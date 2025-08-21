@@ -12,13 +12,13 @@ mapfile -t NIDS < <(bspc query -N -n .window.hidden)
 find_desktop_file() {
     local wm_class="$1"
     local nid="$2"
+    local pwa_id="$3"
 
     [[ -n "$wm_class" ]] || return 1
     local wm_class_lower=$(tr '[:upper:]' '[:lower:]' <<<"$wm_class")
 
     # Search in both system and user desktop file directories
     for dir in ~/.local/share/applications /usr/share/applications; do
-        local pwa_id=$(get_pwa_app_id "$nid" 2>/dev/null || true)
         if [[ -n "$pwa_id" ]]; then
             local desktop_file=$(grep -Rl -- "--app-id=$pwa_id" "$dir"/*.desktop | head -1)
             if [[ -n "$desktop_file" ]]; then
@@ -198,9 +198,10 @@ icon_exists_in_theme() {
 find_window_icon() {
     local nid="$1"
     local class="$2"
+    local pwa_app_id="$3"
 
     # 1. Try desktop file matching by WM_CLASS
-    local desktop_file=$(find_desktop_file "$class" "$nid")
+    local desktop_file=$(find_desktop_file "$class" "$nid" "$pwa_app_id")
     if [[ -n "$desktop_file" ]]; then
         local desktop_icon=$(get_icon_from_desktop "$desktop_file")
         if [[ -n "$desktop_icon" ]]; then
@@ -254,14 +255,17 @@ for nid in "${NIDS[@]}"; do
 
   # Create unique display name with window index
   window_count=$((window_count + 1))
-  if [[ "$title" != "$class" ]] && [[ "$title" != "(no title)" ]]; then
+  pwa_app_id=$(get_pwa_app_id "$nid" 2>/dev/null || true)
+  if [[ -n "$pwa_app_id" ]]; then
+    display_name="$title"
+  elif [[ "$title" != "$class" ]] && [[ "$title" != "(no title)" ]]; then
     display_name="$class - $title"
   else
     display_name="$class"
   fi
 
   # Enhanced icon detection
-  icon_meta=$(find_window_icon "$nid" "$class" 2>/dev/null || echo "application-x-executable")
+  icon_meta=$(find_window_icon "$nid" "$class" "$pwa_app_id" 2>/dev/null || echo "application-x-executable")
 
   # Final safety check
   [[ -n "$icon_meta" ]] || icon_meta="application-x-executable"
