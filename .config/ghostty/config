@@ -43,3 +43,5 @@ window-decoration = server
 # # which is explained in the docs for that config option.
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
+
+app-notifications = no-clipboard-copy

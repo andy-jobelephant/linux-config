@@ -17,12 +17,14 @@ run_once nm-tray          # or: run_once nm-applet
 run_once blueman-applet
 pgrep -x udiskie >/dev/null || udiskie --tray &
 
+# /usr/local/bin/set-monitors.sh
+
+run_once xfsettingsd
 run_once xfce4-panel
 run_once dunst
 pgrep -x picom >/dev/null || picom --daemon &
 run_once nm-applet
-
-/usr/local/bin/set-monitors.sh
+run_once xfce4-clipman
 
 # see monitor names known to bspwm
 bspc query -M --names

@@ -100,6 +100,7 @@
       <property name="symbolic-icons" type="bool" value="false"/>
       <property name="icon-size" type="int" value="22"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="clipman"/>
         <value type="string" value="udiskie"/>
         <value type="string" value="nm-tray"/>
         <value type="string" value="blueman"/>
@@ -268,6 +269,12 @@
     <property name="plugin-32" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17558046791.desktop"/>
+      </property>
+    </property>
+    <property name="clipman" type="empty">
+      <property name="tweaks" type="empty">
+        <property name="popup-at-pointer" type="bool" value="true"/>
+        <property name="paste-on-activate" type="uint" value="1"/>
       </property>
     </property>
   </property>

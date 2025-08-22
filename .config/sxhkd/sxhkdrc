@@ -176,3 +176,6 @@ super + h
 
 Print
 	flameshot gui
+
+super + v
+	xfce4-popup-clipman
