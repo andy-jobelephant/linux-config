@@ -1,0 +1,278 @@
+{
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "workbench.colorTheme": "(Actual) Obsidian",
+    "workbench.iconTheme": "file-icons",
+    "editor.fontFamily": "Fira Code Retina, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "selection",
+    "editor.suggestSelection": "first",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "terminal.integrated.fontFamily": "Fira Code Retina",
+    "debug.console.fontFamily": "Fira Code Retina",
+    "editor.renderControlCharacters": true,
+    "editor.dragAndDrop": false,
+    "workbench.colorCustomizations": {
+        "[(Actual) Obsidian]": {
+            "statusBar.background": "#2D2D2D",
+            "statusBar.noFolderBackground": "#2D2D2D",
+            "statusBar.debuggingBackground": "#597999"
+            // "activityBar.background": "#001faa",
+            // "editor.background": "#383838"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[(Actual) Obsidian]": {
+            "textMateRules": [
+                {
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "foreground": "#e8e2b7",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "scope": "constant.character, constant.other",
+                    "settings": {
+                        "foreground": "#a082bd"
+                    }
+                },
+                {
+                    "scope": "variable.parameter.function",
+                    "settings": {
+                        "foreground": "#ff8bff",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "scope": "meta.function-call.generic.python",
+                    "settings": {
+                        "foreground": "#678cb1"
+                    }
+                },
+                {
+                    "scope": "keyword.operator.comparison.filemaker, keyword.operator.assignment, keyword.operator.arithmetic, keyword.operator.string.filemaker",
+                    "settings": {
+                        "foreground": "#e8e2b7"
+                    }
+                },
+                {
+                    "scope": "log.warning",
+                    "settings": {
+                        "foreground": "#EC7600"
+                    }
+                },
+                {
+                    "scope": "log.error",
+                    "settings": {
+                        "foreground": "#DA4236"
+                    }
+                }
+            ]
+        }
+    },
+    "window.customMenuBarAltFocus": false,
+    "workbench.startupEditor": "none",
+    "workbench.tree.renderIndentGuides": "always",
+    "files.trimTrailingWhitespace": true,
+    "editor.cursorSurroundingLines": 5,
+    "files.associations": {
+        "*.fmpsl": "xml"
+    },
+    "editor.columnSelection": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {"source.organizeImports":"explicit"}
+    },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[rust]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnType": true,
+        "editor.suggest.showTypeParameters": false,
+        "editor.inlayHints.fontSize": 12
+    },
+    "extensions.ignoreRecommendations": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.ipynb": "jupyter-notebook"
+    },
+    "[python]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "[fmfn]": {
+        "editor.unicodeHighlight.allowedCharacters": {
+            "¶": true
+        }
+    },
+    "[go]": {
+        "editor.formatOnSave": true,
+    },
+    "go.toolsEnvVars": {
+        "GOFUMPT_SPLIT_LONG_LINES": "on"
+    },
+    "go.useLanguageServer": true,
+    "gopls": {
+        "formatting.gofumpt": true,
+    },
+    "[terraform]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "hashicorp.terraform"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "security.workspace.trust.banner": "never",
+    "git.confirmSync": false,
+    "telemetry.telemetryLevel": "off",
+    "editor.unicodeHighlight.includeComments": true,
+    "editor.unicodeHighlight.nonBasicASCII": true,
+    "markdown-preview-enhanced.mermaidTheme": "dark",
+    "markdown-preview-enhanced.previewTheme": "one-dark.css",
+    "editor.inlayHints.enabled": "on",
+    "workbench.editor.empty.hint": "hidden",
+    "gitblame.inlineMessageEnabled": true,
+    "git.openRepositoryInParentFolders": "never",
+    "window.title": "${dirty}${rootNameShort}${separator}${activeEditorShort}",
+    "window.zoomLevel": 0.5,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "github.gitProtocol": "ssh",
+    "[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "githubPullRequests.createOnPublishBranch": "never",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "debug.onTaskErrors": "debugAnyway",
+    "cSpell.userWords": [
+        "ADDTIME",
+        "appinsights",
+        "appsetting",
+        "apptracker",
+        "apptrkr",
+        "asuid",
+        "azapi",
+        "azidentity",
+        "azsecrets",
+        "azurecontainerapps",
+        "babar",
+        "babarcontainerreg",
+        "babarcontainerregprdcontainerregistry",
+        "Browserless",
+        "containerapp",
+        "containerreg",
+        "containerregistry",
+        "cooldown",
+        "coreinfraacr",
+        "cportal",
+        "cportalapi",
+        "Creds",
+        "CURLOPT",
+        "dapr",
+        "dateutil",
+        "domcontentloaded",
+        "dotenv",
+        "elasticpool",
+        "environmentvars",
+        "feedscraping",
+        "filemaker",
+        "fmrest",
+        "Foundset",
+        "FRONTAPP",
+        "functionapp",
+        "geckodriver",
+        "getpid",
+        "GETUTCDATE",
+        "ginzap",
+        "githubrepo",
+        "godebug",
+        "healthcheck",
+        "huma",
+        "humagin",
+        "innerhtml",
+        "INSTRUMENTATIONKEY",
+        "Interactor",
+        "jobelephant",
+        "jobwrap",
+        "knexfile",
+        "levelname",
+        "levelno",
+        "logfile",
+        "logrus",
+        "managedidentity",
+        "mang",
+        "maxbytes",
+        "msal",
+        "networkidle",
+        "onedrive",
+        "OPENJSON",
+        "outerhtml",
+        "Paymentech",
+        "POSTFIELDS",
+        "powerbi",
+        "privatelink",
+        "privateserviceconnection",
+        "psutil",
+        "pyodbc",
+        "pyppeteer",
+        "pyproject",
+        "Reco",
+        "recos",
+        "relogin",
+        "scrapedfiles",
+        "serverfarm",
+        "signame",
+        "signum",
+        "sirupsen",
+        "sqladministrator",
+        "sqldatabase",
+        "subresource",
+        "surus",
+        "tearsheet",
+        "tearsheetgenerator",
+        "tearsheets",
+        "terraformstate",
+        "tfstateenv",
+        "uami",
+        "uuidv",
+        "versionless",
+        "vnet",
+        "webapps",
+        "webelement",
+        "westus",
+        "zerolog"
+    ],
+    "remote.autoForwardPortsSource": "hybrid",
+    "docker.extension.dockerEngineAvailabilityPrompt": false,
+    "debugpy.debugJustMyCode": true,
+    "chat.commandCenter.enabled": false,
+    "diffEditor.maxComputationTime": 0,
+    "python.analysis.typeCheckingMode": "standard",
+    "explorer.confirmDragAndDrop": false,
+    "files.dialog.defaultPath": "/home/andy/repos",
+    "azureFunctions.showProjectWarning": false
+}

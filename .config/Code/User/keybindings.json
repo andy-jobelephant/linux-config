@@ -1,0 +1,62 @@
+//Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+t",
+        "command": "extension.transpose",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "extension.expandToLine",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+ctrl+l",
+        "command": "extension.splitIntoLines",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "extension.joinLines",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+alt+shift+i",
+        "command": "editor.action.inspectTMScopes"
+    },
+    {
+        "key": "Enter",
+        "command": "rust-analyzer.onEnter",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == rust"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "rust-analyzer.toggleInlayHints",
+        "when": "editorLangId == 'rust'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    }
+]
