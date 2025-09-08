@@ -6,4 +6,14 @@
     <property name="Threshold" type="int" value="4"/>
     <property name="Acceleration" type="double" value="0"/>
   </property>
+  <property name="DOIO_DOIO_Mouse" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="1"/>
+    <property name="Acceleration" type="double" value="5"/>
+  </property>
+  <property name="Razer_Razer_DeathAdder_Elite" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="1"/>
+    <property name="Acceleration" type="double" value="4"/>
+  </property>
 </channel>

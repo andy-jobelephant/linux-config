@@ -274,5 +274,6 @@
     "python.analysis.typeCheckingMode": "standard",
     "explorer.confirmDragAndDrop": false,
     "files.dialog.defaultPath": "/home/andy/repos",
-    "azureFunctions.showProjectWarning": false
+    "azureFunctions.showProjectWarning": false,
+    "csv-edit.readOption_hasHeader": "true"
 }
