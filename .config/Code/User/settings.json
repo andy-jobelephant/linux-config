@@ -77,7 +77,8 @@
     "files.trimTrailingWhitespace": true,
     "editor.cursorSurroundingLines": 5,
     "files.associations": {
-        "*.fmpsl": "xml"
+        "*.fmpsl": "xml",
+        "*.toml": "toml"
     },
     "editor.columnSelection": false,
     "[html]": {
@@ -275,5 +276,18 @@
     "explorer.confirmDragAndDrop": false,
     "files.dialog.defaultPath": "/home/andy/repos",
     "azureFunctions.showProjectWarning": false,
-    "csv-edit.readOption_hasHeader": "true"
+    "csv-edit.readOption_hasHeader": "true",
+    "cSpell.enabledNotifications": {
+        "Average Word Length too Long": false,
+        "Lines too Long": false,
+        "Maximum Word Length Exceeded": false
+    },
+    "azureFunctions.showCoreToolsWarning": false,
+    "githubPullRequests.codingAgent.enabled": false,
+    "githubPullRequests.codingAgent.autoCommitAndPush": false,
+    "githubPullRequests.experimental.chat": false,
+    "git.suggestSmartCommit": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

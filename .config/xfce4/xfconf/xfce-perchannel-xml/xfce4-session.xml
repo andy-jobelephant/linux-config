@@ -13,12 +13,12 @@
       <property name="IsFailsafe" type="bool" value="true"/>
       <property name="Count" type="int" value="4"/>
       <property name="Client0_Command" type="array">
-        <value type="string" value="xfsettingsd"/>
+        <value type="string" value="bspwm"/>
       </property>
       <property name="Client0_Priority" type="int" value="15"/>
       <property name="Client0_PerScreen" type="bool" value="false"/>
       <property name="Client1_Command" type="array">
-        <value type="string" value="bspwm"/>
+        <value type="string" value="xfsettingsd"/>
       </property>
       <property name="Client1_Priority" type="int" value="20"/>
       <property name="Client1_PerScreen" type="bool" value="false"/>

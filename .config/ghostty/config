@@ -45,3 +45,4 @@ window-decoration = server
 # resize-overlay-duration = 4s 200ms
 
 app-notifications = no-clipboard-copy
+clipboard-paste-protection = false
