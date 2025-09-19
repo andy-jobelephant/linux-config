@@ -26,7 +26,7 @@ config.window_frame = {
 
   -- The size of the font in the tab bar.
   -- Default to 10.0 on Windows but 12.0 on other systems
-  font_size = 12.0,
+  font_size = 10.0,
 
   -- The overall background color of the tab bar when
   -- the window is focused
@@ -36,7 +36,7 @@ config.window_frame = {
   -- the window is not focused
   inactive_titlebar_bg = '#333333',
 }
-config.use_fancy_tab_bar = false
+config.use_fancy_tab_bar = true
 config.enable_scroll_bar = true
 config.show_tab_index_in_tab_bar = false
 
@@ -69,6 +69,21 @@ config.colors = {
       -- or not for this tab.  The default is false.
       strikethrough = false,
     },
+  },
+}
+
+config.keys = {
+  -- Turn off the default CMD-m Hide action, allowing CMD-m to
+  -- be potentially recognized and handled by the tab
+  {
+    key = 't',
+    mods = 'CTRL',
+    action = wezterm.action.SpawnTab "CurrentPaneDomain",
+  },
+  {
+    key = 'w',
+    mods = 'CTRL',
+    action = wezterm.action.CloseCurrentTab{confirm=false},
   },
 }
 
