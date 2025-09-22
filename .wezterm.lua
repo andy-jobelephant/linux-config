@@ -13,7 +13,10 @@ config.initial_rows = 28
 -- or, changing the font size and color scheme.
 config.font_size = 12
 config.font = wezterm.font 'Fira Code Retina'
-config.color_scheme = 'Obsidian'
+-- config.color_scheme = 'Dehydration (Gogh)'
+-- config.color_scheme = 'Chalk (Gogh)'
+-- config.color_scheme = 'Obsidian (Gogh)'
+config.color_scheme = 'Relaxed'
 
 config.window_frame = {
   -- The font used in the tab bar.
